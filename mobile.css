@@ -3,7 +3,83 @@ body {
     grid-template-columns: 20% 80% ;
     grid-template-rows: auto;
     grid-template-areas: "header header"
-                         "nav main"
-                         "aside aside"
+                         "main main"
                          "footer footer";
+}
+li {
+    list-style:none;
+}
+#menu{
+    display:none;
+}
+.hidenav {
+    height: 0.8em;
+    width: 1.25em;
+    position: relative;
+    display: none;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    border-radius: 0.1em;
+    margin:10px;
+}
+.hidenav:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0.3em;
+    left: 0px;
+    border-top: 0.2em solid #fff;
+}
+.shownav {
+    height: 0.8em;
+    width: 1.25em;
+    position: relative;
+    display: block;
+    border-top: 0.2em solid white;
+    border-radius: 0.1em;
+    margin: 10px;
+    transform:  translateY(2px) rotate(45deg) translateY(7px) translateX(-1px);
+}
+.shownav:before {
+    content: '';
+    position: absolute; 
+    display: block;
+    width: 100%;
+    top: 0.3em;
+    left: 0px;
+    border-top: 0.2em solid #fff;
+    transform:  translateY(-6px) rotate(90deg) translateX(-2px);
+}
+#menu{
+    background-color: lightgoldenrodyellow;
+    position: fixed;
+    top: 2.0em;
+    left: 2.0em;
+    width: 80%;
+    height: 10em;
+}
+#menu a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+#menuopen .shownav{
+    display: block;
+}
+#menuopen .hidenav{
+    display: none;
+}
+#menuopen #menu{
+    display:block;
+}
+
+#menuopen:target .shownav{
+    display: none;
+}
+#menuopen:target .hidenav{
+    display: block;
+}
+#menuopen:target #menu{
+    display:none;
 }
