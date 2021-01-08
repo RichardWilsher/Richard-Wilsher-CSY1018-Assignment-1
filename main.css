@@ -18,6 +18,10 @@ aside{
     background: grey;
     grid-area: aside;
 }
+side{
+    background: grey;
+    grid-area: side;
+}
 footer{
     background:grey;
     grid-area: footer;
