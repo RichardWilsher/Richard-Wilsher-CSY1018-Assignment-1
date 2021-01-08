@@ -9,10 +9,8 @@ body {
 li {
     list-style:none;
 }
-#menu{
-    display:none;
-}
-.hidenav {
+
+.shownav {
     height: 0.8em;
     width: 1.25em;
     position: relative;
@@ -22,7 +20,7 @@ li {
     border-radius: 0.1em;
     margin:10px;
 }
-.hidenav:before {
+.shownav:before {
     content: '';
     position: absolute;
     display: block;
@@ -31,7 +29,7 @@ li {
     left: 0px;
     border-top: 0.2em solid #fff;
 }
-.shownav {
+.hidenav {
     height: 0.8em;
     width: 1.25em;
     position: relative;
@@ -41,7 +39,7 @@ li {
     margin: 10px;
     transform:  translateY(2px) rotate(45deg) translateY(7px) translateX(-1px);
 }
-.shownav:before {
+.hidenav:before {
     content: '';
     position: absolute; 
     display: block;
@@ -71,7 +69,7 @@ li {
     display: none;
 }
 #menuopen #menu{
-    display:block;
+    display:none;
 }
 
 #menuopen:target .shownav{
@@ -81,5 +79,5 @@ li {
     display: block;
 }
 #menuopen:target #menu{
-    display:none;
+    display:block;
 }
