@@ -4,6 +4,6 @@ body {
     grid-template-rows: auto;
     grid-template-areas: "header header header"
                          "nav nav nav"
-                         "side main aside"
+                         "aside main aside"
                          "footer footer footer";
 }
