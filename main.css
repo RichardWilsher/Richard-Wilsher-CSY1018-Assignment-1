@@ -48,3 +48,30 @@ header h1{
 .centered{
     text-align: center;
 }
+.portfolioitem{
+    grid-template-columns: 30% 70%;
+    /*align-items: left;*/
+    grid-gap:0.5;
+}
+.portfolioitem img{
+    width:150px;
+    height:150px;
+    grid-column:1;
+}
+.portfolioitem > p{
+    grid-column:2;
+}
+div{
+    margin-top:2em;
+    border: thick double #32a1ce;
+}
+form {
+    display: grid;
+    width: 400px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    grid-gap: 0.5em;
+    }
+.submit{
+    grid-column: 2;
+}
