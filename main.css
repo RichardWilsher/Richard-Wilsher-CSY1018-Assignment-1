@@ -53,13 +53,21 @@ header h1{
     /*align-items: left;*/
     grid-gap:0.5;
 }
+.insidetext{
+    border:none;
+}
+.portfolioitem > p{
+    grid-column:2;
+    width:70%;
+    float:left;
+    margin-top:0em;
+    margin-bottom:0em;
+}
 .portfolioitem img{
     width:150px;
     height:150px;
     grid-column:1;
-}
-.portfolioitem > p{
-    grid-column:2;
+    float:left;
 }
 div{
     margin-top:2em;
