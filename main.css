@@ -12,6 +12,7 @@ nav{
 main{
     background: white;
     grid-area: main;
+    margin:1em;
 }
 aside{
     background: grey;
@@ -39,4 +40,11 @@ footer{
 header h1{
     display:inline;
     float:center;
+}
+.nopaddedline{
+    margin-top:0em;
+    margin-bottom:0em;
+}
+.centered{
+    text-align: center;
 }
