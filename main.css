@@ -68,6 +68,7 @@ header h1{
     height:150px;
     grid-column:1;
     float:left;
+    margin:0.5em;
 }
 div{
     margin-top:2em;
@@ -82,4 +83,38 @@ form {
     }
 .submit{
     grid-column: 2;
+}
+#message{
+    width:300px;
+    height:150px;
+}
+.placeholder{
+    grid-column:1;
+    height: 150px;
+    width: 150px;
+    border-top: black;
+    border-bottom: black;
+    border:solid;
+    margin:0.5em;
+    position:relative;
+    float:left;
+}
+.placeholder:before,.placeholder:after{
+    content:'';
+    position:absolute;
+    width:215px;
+    height:3px;
+    background-color:black;
+    border-radius:2px;
+    top:74px;
+    box-shadow:0 0 2px 0 #ccc;
+}
+
+.placeholder:before{
+    transform:rotate(45deg);
+    right:-34px;
+}
+.placeholder:after{
+    transform:rotate(-45deg);
+    left:-34px;
 }
