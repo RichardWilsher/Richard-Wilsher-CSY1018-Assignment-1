@@ -118,3 +118,8 @@ form {
     transform:rotate(-45deg);
     left:-34px;
 }
+.maintitle{
+    /*doesn't work*/
+    text-align:center;
+    float:center;
+}
