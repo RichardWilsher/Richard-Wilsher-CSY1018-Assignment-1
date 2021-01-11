@@ -52,6 +52,8 @@ header h1{
     grid-template-columns: 30% 70%;
     /*align-items: left;*/
     grid-gap:0.5;
+    margin-top:2em;
+    border: thick double #32a1ce;
 }
 .insidetext{
     border:none;
@@ -70,17 +72,13 @@ header h1{
     float:left;
     margin:0.5em;
 }
-div{
-    margin-top:2em;
-    border: thick double #32a1ce;
-}
 form {
     display: grid;
     width: 400px;
     grid-template-columns: 50% 50%;
     align-items: center;
     grid-gap: 0.5em;
-    }
+}
 .submit{
     grid-column: 2;
 }
@@ -109,7 +107,6 @@ form {
     top:74px;
     box-shadow:0 0 2px 0 #ccc;
 }
-
 .placeholder:before{
     transform:rotate(45deg);
     right:-34px;
@@ -122,4 +119,19 @@ form {
     /*doesn't work*/
     text-align:center;
     float:center;
+}
+.columntable{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: left;
+    grid-gap: 0.5em;
+}
+.titlecolumn{
+    grid-column:1;
+}
+.infocolumn{
+    grid-column:2;
+}
+.nobullet{
+    list-style:none;
 }
