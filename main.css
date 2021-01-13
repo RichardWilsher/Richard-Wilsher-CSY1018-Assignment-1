@@ -1,25 +1,47 @@
 body {
     font-family: 'Noto Sans', sans-serif;
 }
+@media screen and (prefers-color-scheme: dark) {
+	body {
+		background-color:#212121;
+		color:#32a1ce;
+	}
+}
+@media screen and (prefers-color-scheme: light) {
+	body {
+		background-color:#FFF;
+		color:#000;
+	}
+}
 header{
-    background:rgb(196, 196, 196);
+    background:#32a1ce;
     grid-area: header;
+    background-image:url("exmoor.jpg");
 }
 nav{
-    background: grey;
+    background: #32a1ce;
     grid-area: nav;
 }
+nav a{
+    margin-top:0em;
+    margin-bottom:0em;
+}
+nav ul li ul li{
+    margin-top:0em;
+    margin-bottom:0em;
+}
 main{
-    background: white;
+    background: rgb(224, 223, 223);
     grid-area: main;
     margin:1em;
+    padding:0.5em;
 }
 aside{
-    background: grey;
+    background: #06455e;
     grid-area: aside;
 }
 footer{
-    background:grey;
+    background:#32a1ce;
     grid-area: footer;
     font-family: 'Dancing Script', cursive;
 }
@@ -38,8 +60,10 @@ footer{
     float: center;
 }
 header h1{
-    display:inline;
     float:center;
+    margin-top:0em;
+    margin-bottom:0em;
+    color:black;
 }
 .nopaddedline{
     margin-top:0em;
@@ -74,8 +98,8 @@ header h1{
 }
 form {
     display: grid;
-    width: 400px;
-    grid-template-columns: 50% 50%;
+    width: 600px;
+    grid-template-columns: 30% 70%;
     align-items: center;
     grid-gap: 0.5em;
 }
@@ -116,9 +140,7 @@ form {
     left:-34px;
 }
 .maintitle{
-    /*doesn't work*/
     text-align:center;
-    float:center;
 }
 .columntable{
     display: grid;
@@ -140,7 +162,7 @@ form {
     height:50px;
     border-radius: 50%;
 	animation: move 10s infinite ease-in;
-	position: relative;
+    position: relative;
 }
 @keyframes move {
 	0% {
@@ -152,11 +174,11 @@ form {
 	}
 
 	50% {
-		transform: translate(80px, 80px) rotate(180deg);
+		transform: translate(80px, 80px) ;
 	}
 
 	75% {
-		transform: translate(0, 80px) rotate(0deg);
+		transform: translate(0, 80px) rotate(-90deg);
 	}
 
 	100% {
@@ -174,4 +196,15 @@ form {
     margin:0.5em;
     position:relative;
     float:left;
+}
+header div{
+    display:grid;
+    grid-template-columns: 20% 80%;
+}
+header img{
+    grid-column: 1;
+}
+header h1{
+    grid-column: 2;
+    margin:1em;
 }
