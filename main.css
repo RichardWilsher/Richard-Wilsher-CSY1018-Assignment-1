@@ -194,3 +194,9 @@ header h1{
     grid-column: 2;
     margin:1em;
 }
+a img{
+    width:25%;
+}
+main div p:nth-child(even){
+    background:white;
+}
