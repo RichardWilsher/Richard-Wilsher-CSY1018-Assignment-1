@@ -1,18 +1,6 @@
 body {
     font-family: 'Noto Sans', sans-serif;
 }
-@media screen and (prefers-color-scheme: dark) {
-	body {
-		background-color:#212121;
-		color:#32a1ce;
-	}
-}
-@media screen and (prefers-color-scheme: light) {
-	body {
-		background-color:#FFF;
-		color:#000;
-	}
-}
 header{
     background:#32a1ce;
     grid-area: header;
@@ -75,7 +63,7 @@ header h1{
     /*align-items: left;*/
     grid-gap:0.5em;
     margin-top:2em;
-    border: thick double #32a1ce;
+    border: thick double black;
 }
 .insidetext{
     border:none;

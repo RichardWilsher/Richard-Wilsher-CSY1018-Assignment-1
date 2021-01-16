@@ -51,44 +51,85 @@
                 Design
             </h2>
             <p>
-                I initially decided on a clean and simple user interface, primarily a white background with grey accents, for the layout, as shown in figure 1. I initially decided to 
-                go for the header at the top of the screen with my profile picture and name, below, running left to right, the nav links. On the left of the screen, the aside section 
-                was on the right with a brief summery of the contents of the page and another side section on the right.  The footer was positioned along the bottom of the page in its 
-                standard position.  The side to the right was initially going to have more information on the items in my portfolio when the user clicks on the more info link.  However, 
-                this idea would require both the portfolio page to be displayed differently to the rest of the website and not responsive. 
+                I initially decided on a clean and simple user interface, primarily a white background with grey accents, for the layout, as shown in figure 1.  The Header section 
+                is taking up the whole of the top part of the page, with the Nav section directly below it and the Footer taking up the bottom of the page.  My design then split 
+                the rest of the page into 3 sections, the Aside taking up the left, Main in the middle and a section called Side on the right.
+            </p>
+            <p>
+                The content to be included for the Aside, Main and Side sections was: the Aside is to have a brief summary of the content of the Main section of the page, the Side 
+                section was to be blank on each page, other than the portfolio.html page where it is to display more information when a portfolio element is selected. 
             </p>
             <p>
                 For the mobile site, shown in figure 2, I rearranged the sections to fit onto a smaller screen, losing the side section, and having the nav section appear when the 
                 hamburger menu icon is clicked and disappear when clicked again. The aside was positioned above the main section, so the summary of the page would be before main 
                 part of the page and the footer would remain at the bottom of the page.
             </p>
+            <div>
+                <img src="desktopdesign.png" alt="Desktop Design"> Figure 1
+            </div>
+            <div>
+                <img src="mobiledesign.png" alt="Mobile Design"> Figure 2
+            </div>
             <h2>
                 The Journey
             </h2>
             <p>
-                Design in hand I began the journey to create the HTML and CSS files that would form the site.  I decided to use 3 CSS files, mobile.css for the mobile site, 
-                desktop.css for the desktop site and main.css which contains most of the formatting and ensures both mobile and desktop sites remain consistent and easier to 
-                maintain.  With that decision made, I started by creating barebones CSS and HTML files, where I started adding the basic content and simple formatting.  This 
-                allowed me to see how the site would start to look, so I can make changes if needed as I go along.  I added the hamburger menu to the mobile CSS, added the 
-                information for the aside on the portfolio page, then removed it due to inconsistent look of the page and issues making it responsive.  Created my first branch 
-                to work on the hamburger menu, which whilst it was working, it was working in reverse, it started open with the hamburger icon and when closed, showed the cross 
-                icon. I branched here, so that I could work on the code safely, in case I broke it beyond my capacity to fix or return to its original state. Having successfully 
-                corrected the code and figuring out the missing HTML code on all pages other than index.html I merged the branch back into the master branch.
+                I started by creating 5 blank HTML and 3 blank CSS files for the site, I decided to use 3 CSS files, one for most of the CSS which is shared between both 
+                the mobile and desktop sites and then a CSS file for the 2 viewing variants.  My reasons for this are to keep the formatting consistent across the desktop 
+                and mobile CSS files, as well as making it easier to maintain the CSS code, rather than having the same code on both mobile and desktop CSS files.
             </p>
             <p>
-                I then made my second branch to work on adding animation to the NAV menu, again this was to keep the working code safe whilst I added and played around with different 
-                types of animation effects, trying to figure out which I liked most and fitted with the style of the site.  I created my third branch off of the second whilst I tried 
-                to get animation effects working off of the hamburger menu menu.  After getting a hover effect to bring up the additional menu, although they were in reverse order, 
-                I realised that a hover menu effect wouldn’t be in the best interest of the mobile site, as mobiles don’t have mice, and it is not intuitive that additional menu items 
-                could be there, on realising this, I re-evaluated my expectations and decided to add them to the mobile menu in a more standard tiered fashion for the mobile version 
-                of the site, because of this change, I abandoned that branch.
+                Next step was to start adding content to the HTML pages, I added the links to the Nav section on all the pages as well as adding basic text to both Aside 
+                and Footer sections. Most of the work was adding content to the index, CV as shown in figure 3, portfolio and contact pages, for the portfolio page, I started 
+                adding more information as I had planned to do in my design.  At this point it became clear, as shown in figure 4, my plan for the Side section on the portfolio 
+                page would not work, due to not being responsive and the consistent look across the whole site would have had to have been sacrificed.
             </p>
             <p>
-                With the NAV working on both the desktop and mobile site, I continued adding the formatting to both the HTML and the CSS for the contact, CV and then the portfolio 
-                pages, including drawing a box with a cross through it in CSS for the placeholder images.
+                I removed the Side section entirely as without the additional portfolio information, it had become irrelevant, I also removed the page summary on the Aside 
+                section mainly due to consistency across the mobile and desktop versions.  The Header section was added, including my profile picture and the hamburger menu 
+                was added to the mobile sites’ CSS.
             </p>
             <p>
-                With the majority of the content and formatting complete for the other pages, I started on this sitereport page.
+                Due to an issue with the hamburger menu, where it would be open when you loaded the page and the hamburger icon would show whilst the menu is open and the 
+                cross would show when the menu was closed, I decided to branch the project to work on the issue, without the risk of completely breaking the hamburger menu.  
+                After fixing the issue, I merged the branch back into the main.
+            </p>
+            <p>
+                I created another branch to work on animation for the Nav menu, starting with the desktop version of the site, having a couple of links coming down when you 
+                hovered the mouse over the work Links in the Nav section. After adding that I decided to create another branch to work on adding animation to the mobile version, 
+                whilst I managed to get the additional links to appear on screen when you pressed on the Links text, it wasn’t animated and I realised at this point, being mobile, 
+                there was not a mouse over hover function, due to this, and the unintuitive feeling to that additional menu on mobile, I abandoned the branch and I decided to 
+                instead have the mobile Nav menu as a staggered menu on the animated menu branch, which I merged into main.
+            </p>
+            <p>
+                With most of the functionality of the site in place and enough content in place, my next step was to start formatting the elements of the site, so that it would 
+                start to take shape.  Starting with the CV page, then working on the portfolio page and finally the contact page.
+            </p>
+            <p>
+                I decided to take what I had learnt with drawing the Hamburger menu and changing it to a cross shape and instead of using a placeholder image to the portfolio page, 
+                I would instead use CSS to draw a box with a cross through it.
+            </p>
+            <p>
+                With the rest of the site in close to its final form, I started work on this the sitereport page as I felt I had enough of the site completed to start writing my 
+                journey.
+            </p>
+            <p>
+                With only the very last part of my journey to document and conclusion to write, I went back to the other pages and started tidying up my code, I added a keyframe 
+                animation to the portfolio page to show I was able to do that and I felt the portfolio was the best place for it to be, I added CSS code to change the basic look 
+                of the site depending on whether the user had dark mode activated or not, as dark mode is a feature gaining more and more traction recently, especially on mobile.
+            </p>
+            <p>
+                I changed the colour scheme from greys to warmer blues and added an image to the background of the Header section, a picture I took of the scenery of Exmoor close 
+                to where I grew up, to make the site look less sterile.  I also added a single set of columns to my CV page as the brief asked for columns, however the technical 
+                CV style I was using did not entirely fit with a column style.
+            </p>
+            <p>
+                I decided at this point to validate both my HTML and CSS with the online validators.  There were no issues with the HTML and a small number of issues with the CSS, 
+                the main issue with the CSS was the dark mode detection I employed as it is not supported on all web browser platforms, due to this and when viewed in dark mode, 
+                the site would look different to what I had originally intended, I removed it from my final CSS.
+            </p>
+            <p>
+                
             </p>
             <h2>
                 Conclusion
