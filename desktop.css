@@ -1,4 +1,13 @@
-body {
+/*
+ * Filename:	desktop.css
+ * @author:		© Richard Wilsher (19440208)
+ * Course:		CSY1018 Web Development
+ * Tutor:		Tom Butler
+ * @version:	1.0 final
+ * Date:		16/01/2021
+ */
+ /* Element Formating */
+ body {
     display: grid;
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: auto;
@@ -36,6 +45,7 @@ nav > ul > li:hover ul {
     transform: translate(0, 0);
     z-index: 0;
 }
+/* Class Items */
 .validationimages{
     display: grid;
     grid-template-columns: 50% 50%;

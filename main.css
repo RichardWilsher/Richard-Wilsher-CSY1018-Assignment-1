@@ -1,10 +1,33 @@
-body {
+/*
+ * Filename:	main.css
+ * @author:		© Richard Wilsher (19440208)
+ * Course:		CSY1018 Web Development
+ * Tutor:		Tom Butler
+ * @version:	1.0 final
+ * Date:		16/01/2021
+ */
+ /* Element Formating */
+ body {
     font-family: 'Noto Sans', sans-serif;
 }
 header{
     background:#32a1ce;
     grid-area: header;
     background-image:url("exmoor.jpg");
+}
+header div{
+    display:grid;
+    grid-template-columns: 20% 80%;
+}
+header img{
+    grid-column: 1;
+}
+header h1{
+    margin-top:0em;
+    margin-bottom:0em;
+    color:black;
+    grid-column: 2;
+    margin:1em;
 }
 nav{
     background: #32a1ce;
@@ -33,23 +56,23 @@ footer{
     grid-area: footer;
     font-family: 'Dancing Script', cursive;
 }
-#hidenav{
-    display: none;
+form {
+    display: grid;
+    width: 600px;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    grid-gap: 0.5em;
 }
-#shownav{
-    display: none;
+img{
+    width:25%;
 }
+/* Class Items */
 .profile{
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin: 1em;
     display: inline;
-}
-header h1{
-    margin-top:0em;
-    margin-bottom:0em;
-    color:black;
 }
 .nopaddedline{
     margin-top:0em;
@@ -83,20 +106,32 @@ header h1{
     float:left;
     margin:0.5em;
 }
-form {
-    display: grid;
-    width: 600px;
-    grid-template-columns: 30% 70%;
-    align-items: center;
-    grid-gap: 0.5em;
-}
 .submit{
     grid-column: 2;
 }
-#message{
-    width:300px;
-    height:150px;
+.maintitle{
+    text-align:center;
 }
+.columntable{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 0.5em;
+}
+.titlecolumn{
+    grid-column:1;
+}
+.infocolumn{
+    grid-column:2;
+}
+.nobullet{
+    list-style:none;
+}
+.alternating p:nth-child(even){
+    background:white;
+}
+/*
+Drawing a box with a cross in it
+(Tambo, 2013)*/
 .placeholder{
     grid-column:1;
     height: 150px;
@@ -126,22 +161,16 @@ form {
     transform:rotate(-45deg);
     left:-34px;
 }
-.maintitle{
-    text-align:center;
+/* ID Items */
+#hidenav{
+    display: none;
 }
-.columntable{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-gap: 0.5em;
+#shownav{
+    display: none;
 }
-.titlecolumn{
-    grid-column:1;
-}
-.infocolumn{
-    grid-column:2;
-}
-.nobullet{
-    list-style:none;
+#message{
+    width:300px;
+    height:150px;
 }
 #keyframedemo{
     width:50px;
@@ -150,6 +179,18 @@ form {
 	animation: move 10s infinite ease-in;
     position: relative;
 }
+#keyframebox{
+    grid-column:1;
+    height: 150px;
+    width: 150px;
+    border-top: black;
+    border-bottom: black;
+    border:solid;
+    margin:0.5em;
+    position:relative;
+    float:left;
+}
+/* Keyframes Animation Items */
 @keyframes move {
 	0% {
 		transform: translate(0, 0);
@@ -171,32 +212,4 @@ form {
 		transform: translate(0, 0);
 	}
 
-}
-#keyframebox{
-    grid-column:1;
-    height: 150px;
-    width: 150px;
-    border-top: black;
-    border-bottom: black;
-    border:solid;
-    margin:0.5em;
-    position:relative;
-    float:left;
-}
-header div{
-    display:grid;
-    grid-template-columns: 20% 80%;
-}
-header img{
-    grid-column: 1;
-}
-header h1{
-    grid-column: 2;
-    margin:1em;
-}
-img{
-    width:25%;
-}
-.alternating p:nth-child(even){
-    background:white;
 }

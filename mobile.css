@@ -1,4 +1,13 @@
-body {
+/*
+ * Filename:	mobile.css
+ * @author:		© Richard Wilsher (19440208)
+ * Course:		CSY1018 Web Development
+ * Tutor:		Tom Butler
+ * @version:	1.0 final
+ * Date:		16/01/2021
+ */
+ /* Element Formating */
+ body {
     display: grid;
     grid-template-columns: 5% 90% 5%;
     grid-template-rows: auto;
@@ -10,6 +19,8 @@ body {
 nav li {
     list-style:none;
 }
+/* Class Items */
+/* code to draw Hamburger Menu */
 .shownav {
     height: 0.8em;
     width: 1.25em;
@@ -29,6 +40,7 @@ nav li {
     left: 0px;
     border-top: 0.2em solid #fff;
 }
+/* code to draw Hamburger Menu with a Cross */
 .hidenav {
     height: 0.8em;
     width: 1.25em;
@@ -49,6 +61,8 @@ nav li {
     border-top: 0.2em solid #fff;
     transform:  translateY(-6px) rotate(90deg) translateX(-2px);
 }
+/*  ID Elements */
+/* code to show and hide Nav menu and Hamburger Icon/Hamburger Cross icon when clicked */
 #menu{
     background-color: lightgoldenrodyellow;
     position: fixed;
@@ -71,7 +85,6 @@ nav li {
 #menuopen #menu{
     display:none;
 }
-
 #menuopen:target .shownav{
     display: none;
 }
@@ -81,4 +94,3 @@ nav li {
 #menuopen:target #menu{
     display:block;
 }
-
