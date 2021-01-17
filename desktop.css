@@ -36,3 +36,17 @@ nav > ul > li:hover ul {
     transform: translate(0, 0);
     z-index: 0;
 }
+.validationimages{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0.5em;
+}
+.validationimages > div:nth-child(odd){
+    grid-column: 1;
+}
+.validationimages > div:nth-child(even){
+    grid-column: 2;
+}
+.validationimages > div > img{
+    width:50%;
+}

@@ -54,13 +54,14 @@ header h1{
 .nopaddedline{
     margin-top:0em;
     margin-bottom:0em;
+    background: rgb(224, 223, 223);
 }
 .centered{
     text-align: center;
 }
 .portfolioitem{
     grid-template-columns: 30% 70%;
-    /*align-items: left;*/
+    background:white;
     grid-gap:0.5em;
     margin-top:2em;
     border: thick double black;
@@ -131,7 +132,6 @@ form {
 .columntable{
     display: grid;
     grid-template-columns: 30% 70%;
-    /*align-items: left;*/
     grid-gap: 0.5em;
 }
 .titlecolumn{
@@ -194,9 +194,9 @@ header h1{
     grid-column: 2;
     margin:1em;
 }
-a img{
+img{
     width:25%;
 }
-main div p:nth-child(even){
+.alternating p:nth-child(even){
     background:white;
 }
